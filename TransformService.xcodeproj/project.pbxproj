@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1832FBE92E22220F005AE06F /* ServicesSampleData in Frameworks */ = {isa = PBXBuildFile; productRef = 1832FBE82E22220F005AE06F /* ServicesSampleData */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		1832FBD92E22215D005AE06F /* TransformService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransformService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1832FBE92E22220F005AE06F /* ServicesSampleData in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = TransformService;
 			packageProductDependencies = (
+				1832FBE82E22220F005AE06F /* ServicesSampleData */,
 			);
 			productName = TransformService;
 			productReference = 1832FBD92E22215D005AE06F /* TransformService.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 1832FBD02E22215D005AE06F;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1832FBE72E22220F005AE06F /* XCRemoteSwiftPackageReference "ServicesSampleData" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 1832FBDA2E22215D005AE06F /* Products */;
 			projectDirPath = "";
@@ -258,6 +267,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,6 +295,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +331,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1832FBE72E22220F005AE06F /* XCRemoteSwiftPackageReference "ServicesSampleData" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sabari-zuper/ServicesSampleData.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1832FBE82E22220F005AE06F /* ServicesSampleData */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1832FBE72E22220F005AE06F /* XCRemoteSwiftPackageReference "ServicesSampleData" */;
+			productName = ServicesSampleData;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1832FBD12E22215D005AE06F /* Project object */;
 }
