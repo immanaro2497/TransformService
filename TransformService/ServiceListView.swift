@@ -35,6 +35,7 @@ struct ServiceListView: View {
             }
         }
         .refreshable {
+            try? await Task.sleep(for: .seconds(3))
             try? await viewModel.loadServices()
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "Search")

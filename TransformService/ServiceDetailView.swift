@@ -11,11 +11,17 @@ import ServicesSampleData
 
 struct ServiceDetailView: View {
     let service: DomainService
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
-                
+                Map(coordinateRegion: $region)
+                    .frame(height: 200)
+                    .mask {
+                        RoundedRectangle(cornerRadius: 24)
+                    }
+                    .padding(.bottom, 16)
                 HStack(spacing: 0) {
                     titleView
                     Spacer(minLength: 8)
